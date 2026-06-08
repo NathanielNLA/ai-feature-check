@@ -94,8 +94,8 @@
   .todo{border-radius:13px;padding:16px 18px;font-size:14.5px}
   .todo h3{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:9px;font-weight:600}
   .todo ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-  .todo li{display:flex;gap:9px;align-items:flex-start}
-  .todo li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;margin-top:7px;background:currentColor;opacity:.55}
+  .todo li{position:relative;padding-left:18px}
+  .todo li::before{content:"";position:absolute;left:2px;top:8px;width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.55}
 
   /* outcome color skins */
   .skin-green  .card::before{background:var(--green)}  .skin-green  .badge{background:#e7f3eb;color:#236b3b}  .skin-green  .todo{background:#eef7f1;color:#236b3b}
